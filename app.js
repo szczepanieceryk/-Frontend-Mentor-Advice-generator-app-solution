@@ -9,9 +9,7 @@ const diceIconBtn = document.getElementById('dice-id').addEventListener('click',
         .then(response => response.json())
         .then(data => (
             adviceId.textContent = data.slip.id,
-            quoteTxt.textContent = `"${data.slip.advice}"`,
-            console.log(data.slip.advice),
-            console.log(data.slip.id)
+            quoteTxt.textContent = `"${data.slip.advice}"`
         ));
 })
 

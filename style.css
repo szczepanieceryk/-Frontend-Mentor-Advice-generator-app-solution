@@ -34,7 +34,7 @@ span{
 
 /* advice card component */
 .advice-card{
-    margin: 5em auto;
+    margin: 10em auto;
     padding: 2em 1em;
     min-height: 320px;
     position: relative;
@@ -51,21 +51,27 @@ span{
 }
 .quote-txt{
     margin: .5em auto;
-    /* min-height: 30vh; */
+    min-height: 30vh;
     font-size: var(--advice-font-size);
     color: var(--light-cyan);
+    position: relative;
 }
 .quote-txt::after{
-    margin: .5em auto;
     content: url(./images/pattern-divider-mobile.svg);
+    margin: .5em auto;
+    position: absolute;
     display: block;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
 }
 .dice-icon{
     padding: 1em;
     width: 50px;
     position: absolute;
     bottom: 10;
-    left: calc(50% - 25px);
+    left: 50%;
+    transform: translate(-50%);
     border-radius: 50px;
     background-color: var(--neon-green);
     cursor: pointer;
